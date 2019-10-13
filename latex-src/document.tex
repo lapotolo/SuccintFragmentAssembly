@@ -1,0 +1,85 @@
+\documentclass{beamer}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc} 	
+\usepackage{caption}
+\usepackage{adjustbox}
+\usepackage{amsmath}
+
+
+%\documentclass[tikz,border=10pt]{standalone}
+
+
+%% graph drawing
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{overlay-beamer-styles}
+\tikzset{block/.style={rectangle, draw, text width=6em, text centered, rounded corners, minimum height=3em}}
+
+
+
+% Title format
+\title{Fragment Assembly in succint space}
+\subtitle{Compressing de Bruijn and Overlap graphs}
+\titlegraphic{\includegraphics[height=1.5cm, width=1.5cm]{img/cherubino_unipi.eps}}
+\author{Lapo Toloni}
+\institute{Seminar for the course Bioinformatics.\\ MsC in Computer Science, Università di Pisa, a.a. 2018/2019}
+\date{2nd, August 2019}
+
+% Theme definition
+\usetheme{Berlin} 
+\useinnertheme{rounded}
+\useoutertheme{miniframes} 
+\setbeamercovered{dynamic}
+
+% Set theorem style
+\theoremstyle{definition}
+\newtheorem{claim}{Claim:}
+%%%%%%%%%%%%%%%%%%%%
+%% Starting point %%
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	
+% First slide: Frontmatter
+\begin{frame}
+\maketitle
+\end{frame}
+
+
+% BLUE-BLOCK \begin{block}{titolo}\end{block} 
+% GREEN-BLOCK exampleblock
+% RED-BLOCK alertblock
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% INCLUDE SECTIONS PART %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Sections/section1} % intro to assembly problem
+\include{Sections/section2} % intro to succint data structures
+\include{Sections/section3} % BOSS   representation for dBGs
+\include{Sections/section4} % voBOSS representation for dBGs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{} % or \section*{}
+\begin{frame}
+\frametitle{References}
+\begin{enumerate}
+	\item Alexander Bowe, Taku Onodera, Kunihiko Sadakane, and Tetsuo Shibuya. Succinct de Bruijn
+	graphs. In Proc. 12th International Workshop on Algorithms in Bioinformatics (WABI), pages
+	225–235, 2012.
+	\item Christina Boucher, Alexander Bowe, Travis Gagie, Simon J Puglisi, and Kunihiko Sadakane.
+	Variable-order de Bruijn graphs. In Proc. 25th Data Compression Conference (DCC), pages
+	383–392, 2015.
+	\item 	Diego Díaz-Domínguez, Travis Gagie, Gonzalo Navarro. Simulating the DNA String Graph in Succinct Space
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+Thanks for the attention! \\ \medskip
+Any question?
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

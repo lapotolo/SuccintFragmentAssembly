@@ -1,0 +1,5 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Genome Assembly Problem}{2}{0}{1}
+\beamer@sectionintoc {2}{Succint Data Structures}{12}{0}{2}
+\beamer@sectionintoc {3}{BOSS}{18}{0}{3}
+\beamer@sectionintoc {4}{Extending BOSS: voBOSS and rBOSS}{34}{0}{4}

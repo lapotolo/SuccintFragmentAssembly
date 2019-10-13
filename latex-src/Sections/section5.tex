@@ -1,0 +1,27 @@
+% Section 5
+\section{Simulating the overlap graph}
+
+
+
+\begin{frame}
+\frametitle{Link between variable-order and overlaps.}
+
+Overlaps between R∗ can be comreads inputed using VO-BOSS(G′) as follows: 
+\begin{itemize}
+	
+	\item extend a unary path using solid nodes as much as
+	possible, 
+	
+	\item if a solid node v without outgoing edges is reached, then decrease its order with shorter to retrieve the vo-dBG nodes that represent both a suffix of v and a prefix of some read in R.
+	From these nodes, retrieve the overlapping solid nodes of v by using forward and
+	continue the graph right traversal from one of them.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Problem with shorter operation}
+In VO-BOSS, however, shorter does not ensure that the label of the output node appears
+as a prefix in R∗
+. The next lemma precises the condition that must hold to ensure this.
+
+\end{frame}
